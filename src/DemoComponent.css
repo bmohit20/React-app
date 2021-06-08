@@ -2,5 +2,53 @@
     color: #000000;
     font: 24px introBold;
     text-align: center;
+    background-color: red;
+    margin: 15px;
+}
+
+.block-element {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.block-data-container {
+    display: block;
+    grid-template-columns: 33% 33% 33%;
+    border: solid 2px #000000;
+    border-radius: 5px;
+    min-height: 100px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+.block-data-container:nth-child(even) {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red , yellow);
+}
+
+.block-data-container:nth-child(odd) {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow);
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-more {
+    font: 500 16px introBold;
+    color: blue;
+    line-height: 14px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    padding: 0 20px;
+    background: none;
+    min-width: 165px;
+    min-height: 40px;
+    text-transform: uppercase;
 }
 
